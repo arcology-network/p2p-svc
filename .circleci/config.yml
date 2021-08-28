@@ -1,0 +1,26 @@
+# Use the latest 2.1 version of CircleCI pipeline processing engine, see https://circleci.com/docs/2.0/configuration-reference/
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.13
+    working_directory: /go/src/github.com/arcology/p2p-svc
+    steps:
+      - checkout
+      - run: go env -w GOPRIVATE=github.com/arcology
+      - run: go build -o p2p-svc .
+      - run: go build -o Eater ./eater/eater.go
+      - run: go build -o Feeder ./feeder/feeder.go
+      - store_artifacts:
+          path: p2p-svc
+      - store_artifacts:
+          path: Feeder
+      - store_artifacts:
+          path: Eater
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build

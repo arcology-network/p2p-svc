@@ -1,2 +1,2 @@
-# p2p-svc
-P2P Communication Service
+# p2p-service
+Monaco p2p service.
