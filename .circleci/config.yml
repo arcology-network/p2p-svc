@@ -5,10 +5,10 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.13
-    working_directory: /go/src/github.com/arcology/p2p-svc
+    working_directory: /go/src/github.com/arcology-network/p2p-svc
     steps:
       - checkout
-      - run: go env -w GOPRIVATE=github.com/arcology
+      - run: go env -w GOPRIVATE=github.com/arcology-network
       - run: go build -o p2p-svc .
       - run: go build -o Eater ./eater/eater.go
       - run: go build -o Feeder ./feeder/feeder.go

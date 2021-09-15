@@ -3,11 +3,11 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/arcology/Monaco/core/p2p"
-	"github.com/arcology/Monaco/tmlibs/log"
-	"github.com/arcology/common-lib/common"
-	"github.com/arcology/component-lib/actor"
-	"github.com/arcology/component-lib/kafka/lib"
+	"github.com/arcology-network/Monaco/core/p2p"
+	"github.com/arcology-network/Monaco/tmlibs/log"
+	"github.com/arcology-network/common-lib/common"
+	"github.com/arcology-network/component-lib/actor"
+	"github.com/arcology-network/component-lib/kafka/lib"
 )
 
 const (

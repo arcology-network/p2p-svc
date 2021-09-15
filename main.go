@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/arcology/3rd-party/tm/cli"
-	"github.com/arcology/p2p-svc/node"
+	"github.com/arcology-network/3rd-party/tm/cli"
+	"github.com/arcology-network/p2p-svc/node"
 	"github.com/spf13/cobra"
 )
 

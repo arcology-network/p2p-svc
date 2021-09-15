@@ -3,14 +3,14 @@ package node
 import (
 	"context"
 
-	"github.com/arcology/3rd-party/tm/common"
-	"github.com/arcology/Monaco/core/config"
-	"github.com/arcology/Monaco/core/p2p"
-	"github.com/arcology/Monaco/core/version"
-	"github.com/arcology/Monaco/tmlibs/log"
-	"github.com/arcology/component-lib/actor"
-	"github.com/arcology/component-lib/kafka/lib"
-	"github.com/arcology/p2p-svc/mempool"
+	"github.com/arcology-network/3rd-party/tm/common"
+	"github.com/arcology-network/Monaco/core/config"
+	"github.com/arcology-network/Monaco/core/p2p"
+	"github.com/arcology-network/Monaco/core/version"
+	"github.com/arcology-network/Monaco/tmlibs/log"
+	"github.com/arcology-network/component-lib/actor"
+	"github.com/arcology-network/component-lib/kafka/lib"
+	"github.com/arcology-network/p2p-svc/mempool"
 )
 
 type Node struct {

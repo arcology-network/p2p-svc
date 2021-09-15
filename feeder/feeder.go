@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/arcology/component-lib/actor"
-	"github.com/arcology/component-lib/kafka/lib"
-	"github.com/arcology/component-lib/log"
+	"github.com/arcology-network/component-lib/actor"
+	"github.com/arcology-network/component-lib/kafka/lib"
+	"github.com/arcology-network/component-lib/log"
 )
 
 func main() {
